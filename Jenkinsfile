@@ -4,12 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo "Hello World"'
+                sh 'tidy -q -e *.html'
             }
         }
-        stage('Lint HTML') {
-              steps {
-                  sh 'tidy -q -e *.html'
-              }
-         }
     }
 }
