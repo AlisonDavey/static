@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Upload to AWS') {
+        stage('Upload S3') {
             steps {
-                sh 'echo "Upload to AWS"'
+                sh 'echo "Hello World"'
             }
         }
     }
